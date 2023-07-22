@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        .outer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 2fr 1fr 1fr 1fr;
+            background-color: black;
+            color: white;
+            min-width: 480px;
+            max-height: 620px;
+            text-align: center;
+            font-family: 'poppins', sans-serif;
+            border-radius: 10px;
+            
+        }
+        .container > p {
+            font-size: xx-large;
+        }
+        .info {
+            font-size: large;
+            background-color: aquamarine;
+            color: black
+        }
+        .title {
+            margin-top: 30px;
+            font-size: 1.4rem;
+        }
+        
+        .val {
+            padding-bottom: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.1rem;
+        }
+
+    </style>\
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="outer">
+        <div class="container">
+        <p>Contact Us</p>
+        <div class="info">
+            <div class="contact">
+                <p class="title">Phone:</p>
+                <p class="val">xxx-xxx-xxxx</p>
+            </div>
+            <div class="contact">
+                <p class="title">Email:</p>
+                <p class="val">abc@gamil.com</p>
+            </div>
+            <div class="contact">
+                <p class="title">Address:</p>
+                <p class="val">
+                    sector - 69 <br/>
+                    Berlin <br />
+                    Germany
+                </p>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
