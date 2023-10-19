@@ -1,9 +1,9 @@
 var random1 = Math.floor(Math.random()*6) + 1;
-var random1path = "./images/" + "dice" + random1 + ".png";
+var random1path = "./images/dice" + random1 + ".png";
 document.querySelectorAll("img")[0].setAttribute("src", random1path);
 
 var random2 = Math.floor(Math.random()*6) + 1;
-var random2path = "./images/" + "dice" + random2 + ".png";
+var random2path = "./images/dice" + random2 + ".png";
 document.querySelectorAll("img")[1].setAttribute("src", random2path);
 
 if(random1 > random2){
