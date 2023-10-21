@@ -2,7 +2,6 @@
   "name": "dev",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "prompt-sync": "^4.2.0"
+    "inquirer": "^9.2.11",
+    "prompt-sync": "^4.2.0",
+    "qr-image": "^3.2.0"
   },
-  "devDependencies": {},
   "description": ""
-  
 }
