@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+  <div class="container col-sm-9">
+    <h1>My Blog</h1>
+    <a id="newPostBtn" href="/new">New Post</a>
+    <a id="findPostBtn" href="/find">Find Post</a>
+    
+    <ul id="postsList">
+      <% for(let i=0; i<posts.length; i++){ %>
+        <li>
+          <h2>
+            <%= posts[i].title %>
+          </h2>
+          <small>
+            <%= posts[i].date %>
+          </small>
+          <p>
+            <%= posts[i].content %>
+          </p>
+          <small>
+            By: <%= posts[i].author %> 
+          </small>
+          <small>
+            ID: <%= posts[i].id %> 
+          </small>
+          <a class="edit" href="/edit/<%= posts[i].id %>">
+            Edit
+          </a>
+          <a class="delete" href="/api/posts/delete/<%= posts[i].id %>">
+            Delete
+          </a>
+        </li>
+        <% } %>
+        
+    </ul>
+  </div>
+
+</body>
+
+</html>
