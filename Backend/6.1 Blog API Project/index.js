@@ -28,12 +28,13 @@ app.get("/posts/:id", (req, res) => {
 
 // POST a new post
 app.post("/posts", (req, res) => {
+  var date = new Date().toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
   const post = {
     id: posts.length+1,
     title: req.body.title,
     content: req.body.content,
     author: req.body.author,
-    date: new Date()
+    date: date
   };
   posts.push(post);
   res.status(201);
