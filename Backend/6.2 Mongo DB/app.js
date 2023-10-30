@@ -2,7 +2,7 @@ import mongo from 'mongodb';
 import assert from 'assert';
 
 const MongoClient = mongo.MongoClient;
-const url = 'mongodb+srv://aaravarya27:aaravarya27@cluster0.h42zxip.mongodb.net';
+const url = 'mongodb+srv://aaravarya27:<password>@cluster0.h42zxip.mongodb.net';
 
 const dbName = "fruitsDB";
 
